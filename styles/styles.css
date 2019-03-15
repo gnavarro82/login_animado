@@ -1,0 +1,72 @@
+body, html{
+    height: 100%;
+}
+body{
+    margin:0;
+    padding: 0;
+    background: #2f3542;
+    /*propieda flex para que se centre*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /*ocultar la barra al cargar la aniamcion*/
+    overflow: hidden;
+}
+
+/*Estilizacion del form*/
+.form-box{
+    width: 300px;
+    padding: 40px;
+    background: #191919;
+    text-align: center;
+}
+.form-title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/*SELECCIONADO ELEMETOS POR SU PROEIDAD*/
+/*desde el form-box seleccionar
+el input de tipo texto*/
+
+.form-box input[type="text"],
+.form-box input[type="password"],
+.form-box button[type="submit"]{
+    /*quitando los bordes por defecto*/
+    border:0;
+    background: none; /*se pone transparente*/
+    display: block;/*Uno ebncima del otro*/
+    margin:20px auto;
+    padding: 14px 10px;
+    text-align: center;
+    border: 2px solid #3742fa;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+
+}
+
+/*Seleccionado evento focus*/
+.form-box input[type="text"]:focus,
+.form-box input[type="password"]:focus{
+width: 280px;
+border-color: #fff;
+
+}
+
+.form-box button[type="submit"]{
+    border:0;
+    background: #5352ed;
+    cursor: pointer;
+    border: 2px solid #3742fa;
+}
+
+.form-box button[type="submit"]:hover{
+    background: none;
+    border: 2px solid #3742fa;
+}
